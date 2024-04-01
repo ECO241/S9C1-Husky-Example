@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../src/index');
+const app = require('../src/index.js');
 
 describe('API /usuario', () => {
   // Test case 1
@@ -12,9 +12,7 @@ describe('API /usuario', () => {
       correo: 'johndoe@example.com',
     };
     // Send a POST request to /usuarios endpoint
-    const res = await request(app)
-      .post('/usuarios')
-      .send(usuario);
+    const res = await request(app).post('/usuarios').send(usuario);
     // Check the response
     expect(res.statusCode).toEqual(201);
     expect(res.body.id).toEqual(usuario.id);
