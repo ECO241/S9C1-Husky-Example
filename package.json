@@ -11,6 +11,11 @@
     "lint": "eslint . --ext .js",
     "prepare": "husky"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint --ignore-path .gitignore ."
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
