@@ -9,7 +9,7 @@
  * or add some configurations to the server
  */
 
-const app = require('./index');
+const app = require('./index.js');
 
 // eslint-disable-next-line no-console
 app.listen(3000, () => console.log('server starting 🚀🆙✔ on port 3000!'));
