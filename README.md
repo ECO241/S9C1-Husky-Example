@@ -1,4 +1,4 @@
-# S7C3-API-PRACTICE
+# S9C1-LINTERS
 
 ## Description
 This repository contains the code for the S7C3 API practice.
